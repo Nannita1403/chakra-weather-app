@@ -1,0 +1,64 @@
+.header {
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1vw;
+  }
+  
+  .MenuIconContainer {
+    width: 6vw;
+    height: auto;
+    display: flex;
+  
+    > img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  
+  .companyName {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .companylogoWrapper {
+    width: 9vw;
+    height: auto;
+    display: flex;
+  }
+  
+  .companylogoWrapper > img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .companyName > p {
+    display: none
+  }
+  
+  @media screen and (min-width: 1023px) {
+    .MenuIconContainer {
+      display: none;
+    }
+  
+    .companylogoWrapper {
+      width: 5vw;
+    }
+  
+    .companyName {
+      flex-direction: row;
+    }
+    .companyName > p {
+      font-size: 1vw;
+    }
+    .companyName > p {
+      font-size: 1.8vw;
+      font-weight: bold;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+        Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+        sans-serif;
+    }
+  }

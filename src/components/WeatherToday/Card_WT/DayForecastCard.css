@@ -1,0 +1,212 @@
+
+.ForecastCardContainer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 85vw;
+    gap: 1vw;
+    border-radius: 5px;
+    animation: slideUpAnimation 1s ease-out;
+  }
+  
+  .ForecastCardContainer > .cityInfo {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .cityInfo > h2 {
+    font-size: 5vw;
+    color: #272d2d;
+  }
+  
+  .cityInfo > h2 > span {
+    font-size: 7vw;
+    color: #272d2d;
+  }
+  
+  .cityInfo > h3,
+  .cityInfo > h4 {
+    font-size: 3vw;
+    font-weight: bold;
+    color: #272d2d;
+  }
+  
+  .weatherTable {
+    display: flex;
+    height: 70vh;
+    width: 80vw;
+    padding-top: 5vw;
+    flex-direction: column;
+  }
+  
+  .weatherTableRow {
+    text-align: center;
+  }
+  
+  .trHead {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+  td {
+    width: 15vw;
+    font-size: 3vw;
+  }
+  
+  th {
+    font-size: 2.5vw;
+    padding: 1vw;
+  }
+  
+  figure {
+    display: flex;
+    gap: 1vw;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  .additionalInfo {
+    color: #272d2d;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80vw;
+    height: 5vh;
+    border-radius: 5px;
+    padding: 2vw 0;
+    border-bottom: 1px solid #f2f2f2;
+  }
+  
+  .additionalInfoDataContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5vw;
+    width: 30vw;
+  }
+  
+  .iconAdditionalDataContainer {
+    width: 2vw;
+    height: auto;
+    display: flex;
+  }
+  
+  .iconAdditionalDataContainer > img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .additionalInfoDataContainer > h5 {
+    font-size: 2vw;
+  }
+  
+  .toggleIcon {
+    filter: grayscale(100%);
+  }
+  
+  figure > img {
+    width: 5vw;
+    height: auto;
+  }
+  
+  figure > figcaption {
+    width: auto;
+    font-size: 2vw;
+  }
+  
+  .newDayContainer {
+    width: 100%;
+    text-align: center;
+    background-color: rgba(255, 255, 252, 0.5);
+    padding: 0.5vw 0;
+    font-size: 3vw;
+    height: 5vw;
+  }
+  
+  .newDayContainer > p {
+    font-size: 1.5vw;
+    font-weight: bold;
+  }
+  
+  @media screen and (min-width: 1023px) {
+    .ForecastCardContainer {
+      width: 70vw;
+      justify-content: flex-start;
+    }
+    .ForecastCardContainer>.cityInfo {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 1vw;
+    }
+  
+    .cityInfo > h2 {
+      font-size: 2vw;
+    }
+  
+    .cityInfo > h2 > span {
+      font-size: 3vw;
+    }
+  
+    .cityInfo > h3 {
+      font-size: 1.8vw;
+    }
+  
+    .weatherTable {
+      width: auto;
+      height: 60vh;
+      padding-top: 0;
+    }
+  
+    .trHead {
+        display: flex;
+        justify-content: space-evenly;
+    }
+  
+    th {
+      font-size: 1.7vw;
+      padding: 1.5vw;
+      margin-left: 1vw;
+    }
+    td {
+      font-size: 1.2vw;
+    }
+  
+    .additionalInfo {
+        display: flex;
+        justify-content: flex-start;
+      width: 70vw;
+    }
+  
+    .additionalInfoDataContainer > h5 {
+      font-size: 1vw;
+      font-weight: 400;
+    }
+  
+    figure > img {
+      width: 4vw;
+      height: auto;
+    }
+  
+    figure > figcaption {
+      width: auto;
+      font-size: 2vw;
+    }
+  
+    .iconAdditionalDataContainer {
+      width: 1.6vw;
+      height: auto;
+    }
+  
+    .newDayContainer {
+      font-size: 1.2vw;
+      height: 2vw;
+    }
+  }

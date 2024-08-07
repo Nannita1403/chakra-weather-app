@@ -1,0 +1,15 @@
+.weatherTodayContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+    border: .5px dotted rgba(0, 0, 0, .2);
+    border-radius: 5px;
+    box-shadow: 0 0 16px 5px #00000096;
+
+  }
+  .weatherTodayContainer::-webkit-scrollbar-thumb {
+    background-color: transparent;
+  }

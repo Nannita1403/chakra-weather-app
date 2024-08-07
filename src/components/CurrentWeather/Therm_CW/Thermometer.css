@@ -1,0 +1,83 @@
+.thermometer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 28px;
+    height: 120px;
+    background: linear-gradient(
+      to top,
+      #ffffff,
+      #f7eb97,
+      #ffee00,
+      #ffbf00,
+      #ff8000
+    );
+    position: relative;
+    margin: 0 auto;
+    border-radius: 50px;
+  }
+  
+  .minText {
+    bottom: 20px;
+    font-size: 4vw;
+  }
+  
+  .feelsText {
+    bottom: 60px;
+    font-size: 4vw;
+  }
+  
+  .maxText {
+    top: 0px;
+    font-size: 4vw;
+  }
+  
+  .temperature {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 12px;
+    margin-left: 45px;
+    padding: 0 5px;
+    font-weight: bold;
+    min-width: 300px;
+    height: 120px;
+    position: absolute;
+  }
+  
+  .temperature > * {
+    position: absolute;
+  }
+  em {
+    font-size: 4vw;
+  }
+  
+  @media screen and (min-width: 1024px) {
+    .thermometer {
+      height: 200px;
+    }
+  
+    .temperature {
+      height: 200px;
+    }
+  
+    .minText {
+      bottom: 15px;
+      font-size: 1.5vw;
+    }
+  
+    .feelsText {
+      bottom: 95px;
+      font-size: 1.5vw;
+    }
+  
+    .maxText {
+      top: -20px;
+      font-size: 1.5vw;
+    }
+  
+    em {
+      font-size: 1.8vw;
+    }
+  }

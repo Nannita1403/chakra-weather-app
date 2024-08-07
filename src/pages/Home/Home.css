@@ -1,0 +1,38 @@
+@keyframes slideUpAnimation {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .nowContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 100vw;
+    height: 85vh;
+    animation: slideUpAnimation 1s ease-out;
+    padding-left: 1vw;
+  }
+  
+  .currentWeatherArticle {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  @media screen and (min-width: 1023px) {
+    .nowContainer {
+      width: 100vw;
+      animation: slideUpAnimation 1s ease-out;
+    }
+  
+  }
